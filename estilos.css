@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Spartan&display=swap');
+
+
+/*
+*  etiquetas principales
+*/
+
+html {
+    font-family:'Spartan';
+    font-size: 1rem;
+}
+header {
+    background-color:#2e444b;
+}
+footer {
+    display: flex; 
+    color: #e2e2e2;
+    background-color: #2e444b;
+    padding: 2rem;
+}
+main{
+    background-color: #e2e2e2;
+}
+
+/*
+* flexbox
+*/
+
+.flex_col{
+    display:flex;
+    flex-direction: column;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.flex_row_sin{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 0.6rem;
+    padding-right: 2rem;
+}
+.flex_row_icono{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.flex_grow{
+    flex-grow: 1;
+}
+.flex_item_centrado{
+    display: flex;
+    align-items: center;
+}
+.flex_item_derecha{
+    display: flex;
+    align-items: flex-end;
+}
+.flex_item_izquierda{
+    display: flex;
+    align-items: flex-start;
+}
+
+/*
+*  Menú desplegable 
+* (he usado el otro tipo de letra para que se usen las dos simplemente
+* porque donde la usaba era en la zona de "donde comer")
+*/
+
+.texto_menu{
+    font-family:"Architects Daughter";
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    padding: 1rem;
+    background-color: #e2e2e2;
+    color:#2e444b;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: #2e444b;
+    color:#e2e2e2;
+}
+.menu ul li ul{
+    display: none;
+}
+.menu li:hover{
+    display: block;
+}
+.menu ul li a:hover + ul, .menu ul li ul:hover{
+    display: block;
+}
+
+/*
+*  imagen desplazables 
+*/
+
+.slider{
+    margin: auto;
+    overflow: hidden;
+}
+.slider_ul{
+    display:flex;
+    padding: 1rem;
+    width: 50%;
+    animation: cambio 20s infinite;
+}
+.slider_li{
+    list-style: none;
+    margin-left: 7rem;
+    
+}
+@keyframes cambio {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+}
+
+/*
+*  border y estilo de las cajas 
+*/
+
+.borde{
+    border-style: solid;
+    border-width: thin;
+    border-color:#e2e2e2;
+    border-radius: 0.3rem;
+}
+.borde_linea{
+    border-bottom: solid;
+    border-color: #2e444b;
+}
+.estilo_li{
+    list-style: none;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    width: 30rem;
+    box-sizing: border-box;
+}
+.estilo_box_texto{
+    padding:0.3rem;
+    width: 18.3rem;
+    border-color: #2e444b;
+    background-color: #e2e2e2;
+    border-radius: 0.2rem;
+}
+.estilo_li_boton{
+    list-style: none;
+    padding-left: 2rem;
+    width: 30rem;
+    box-sizing: border-box;
+}
+.boton{
+    list-style: none;
+    padding-left: 5rem;
+    padding:0.3rem;
+    width: 19rem;
+}
+.icono{
+    width: 10rem;
+    height: 3.5rem;
+}
+.icono_pequeño{
+    width: 2rem;
+    height: 2rem;
+}
+.imgen_principal{
+    width: 28rem;
+    height: 20rem;
+    padding: 3rem;
+}
+.color{
+    background-color:#2e444b;
+    border:0;
+}
+
+/*
+*  modificación de texto 
+*/
+
+.texto_negrita{
+    padding-left: 2rem;
+    font-weight: bolder;
+    font-size: large;
+}
+.texto_negrita_grande{
+    font-weight: bolder;
+    font-size: large;
+}
+.texto_footer{
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+.img_footer{
+    padding-bottom: 1rem;
+}
+.texto_pequeño{
+    font-size: smaller;
+}
+.texto_padding_izquierdo{
+    padding-left: 5rem;
+}
